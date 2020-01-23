@@ -5,7 +5,7 @@
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-      <b-collapse id="nav-collapse" is-nav>
+      <b-collapse class="text-center" id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
           <router-link to="/">Home</router-link>
           <router-link to="/about">About</router-link>

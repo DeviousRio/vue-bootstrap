@@ -1,6 +1,6 @@
 <template>
   <div>
-      <h1>VueJS + Bootstrap</h1>
+      <h1 class="text-center mt-5">VueJS + Bootstrap</h1>
   </div>
 </template>
 
@@ -11,8 +11,5 @@ export default {
 </script>
 
 <style scoped>
-div h1 {
-  text-align: center;
-  margin-top: 1em;
-}
+
 </style>
