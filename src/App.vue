@@ -2,16 +2,19 @@
   <div id="app">
     <Navigation />
     <router-view />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Navigation from "./components/Navigation.vue";
+import Footer from "./components/Footer";
 
 export default {
   name: "app",
   components: {
-    Navigation
+    Navigation,
+    Footer
   }
 };
 </script>
@@ -23,5 +26,13 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
+}
+
+a:hover {
+  text-decoration: none !important;
 }
 </style>

@@ -7,6 +7,7 @@
 
       <b-collapse class="text-center" id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
+          <!-- Is this correct or i should use <b-nav-item href="/">Home</b-nav-item>  -->
           <router-link to="/">Home</router-link>
           <router-link to="/about">About</router-link>
           <router-link to="/services">Services</router-link>
@@ -29,6 +30,7 @@ a {
   text-decoration: none;
   color: #FFF;
   margin: 0 2em;
+  font-size: 1.1em;
 }
 
 a:hover {
