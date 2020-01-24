@@ -11,7 +11,8 @@
           <p class="text-white h5 mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
           <!-- Can i replace "a" tag with <router-link> -->
           <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a> -->
-          <router-link to="/about">Find Out More</router-link>
+          <!-- Can i put button inside router-link -->
+          <router-link to="/about"><b-button class="pl-4 pr-4" variant="outline-primary">Find Out More</b-button></router-link>
         </div>
       </div>
     </div>
