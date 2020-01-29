@@ -80,7 +80,7 @@ export default {
   height: 2px;
   left: 0;
   position: absolute;
-  width: 54px;
+  width: 150px;
 }
 .aboutus-text {
   color: #606060;
@@ -121,7 +121,6 @@ a:active {
 
 .feature .feature-box .feature-content {
   float: left;
-  padding-left: 50px;
   width: 78%;
 }
 
