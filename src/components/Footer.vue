@@ -22,6 +22,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 0.2em;
   }
 
   li {
