@@ -13,7 +13,7 @@
           <router-link to="/services">Services</router-link>
           <router-link to="/contact">Contact</router-link>
           <router-link to="/login">Login</router-link>
-          <router-link to="#">Register</router-link>
+          <router-link to="/register">Register</router-link>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -31,7 +31,7 @@ export default {
 a {
   text-decoration: none;
   color: #FFF;
-  margin: 0 2em;
+  margin: 0 1.5em;
   font-size: 1.1em;
 }
 

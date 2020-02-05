@@ -6,6 +6,7 @@ import About from './views/About';
 import Services from './views/Services';
 import Contact from './views/Contact';
 import Login from './views/Login';
+import Register from './views/Register';
 
 Vue.use(Router);
 
@@ -15,6 +16,7 @@ export default new Router({
         { path: '/about', name: 'about', component: About },
         { path: '/services', name: 'services', component: Services },
         { path: '/contact', name: 'contact', component: Contact },
-        { path: '/login', name: 'login', component: Login }
+        { path: '/login', name: 'login', component: Login },
+        { path: '/register', name: 'register', component: Register }
     ]
 });
