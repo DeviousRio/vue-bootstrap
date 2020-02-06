@@ -4,11 +4,11 @@
         <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
             <div class="card card-signin my-5">
                 <div class="card-body">
-                <h5 class="card-title text-center">Sign In</h5>
+                <h2 class="card-title text-center">Sign In</h2>
                     <form class="form-signin">
                         <div class="form-label-group">
                             <!-- <label for="inputEmail">Email address</label> -->
-                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
                         </div>
 
                         <div class="form-label-group">
@@ -20,7 +20,10 @@
                             <input type="checkbox" class="custom-control-input" id="customCheck1">
                             <label class="custom-control-label ml-1" for="customCheck1">Remember password</label>
                         </div>
-                        <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+                        <!-- <button class="btn btn-success btn-lg btn-block text-uppercase" type="submit">Sign in</button> -->
+                        <div class="form-group">
+                          <button type="submit" class="btn btn-success btn-lg btn-block">Sign In</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -38,8 +41,8 @@ export default {
 <style scoped>
 .card-signin {
   border: 0;
-  border-radius: 1rem;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   color: #636363;
   background: #f2f3f7;
 }
@@ -47,7 +50,6 @@ export default {
 .card-signin .card-title {
   margin-bottom: 2rem;
   font-weight: 300;
-  font-size: 1.5rem;
   position: relative;
 }
 
@@ -78,7 +80,11 @@ export default {
   width: 100%;
 }
 
-.form-signin .btn {
+.custom-checkbox {
+  margin-top: 2rem;
+}
+
+/* .form-signin .btn {
   font-size: 80%;
   letter-spacing: .1rem;
   font-weight: bold;
@@ -91,16 +97,19 @@ export default {
 
 .form-signin .btn:hover {
   background: #28a745;
+} */
+
+.btn {
+  font-weight: bold;
 }
 
 .form-label-group {
   position: relative;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 .form-label-group input {
   height: auto;
-  border-radius: 2rem;
 }
 
 .form-label-group > input,
