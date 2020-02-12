@@ -1,6 +1,8 @@
 <template>
   <div class="container">
     <h2 class="text-center mt-4">At Your Service</h2>
+    <div class="row justify-content-center">
+    </div>
     <hr class="divider my-4" />
     <div class="row mb-5">
       <div class="col-lg-3 col-md-6 text-center">
