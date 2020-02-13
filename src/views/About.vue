@@ -1,54 +1,101 @@
 <template>
-  <div class="aboutus-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="aboutus">
-            <h2 class="aboutus-title">About Us</h2>
-            <p
-              class="aboutus-text"
-            >Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
-            <p
-              class="aboutus-text"
-            >This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem</p>
+  <div class="container">
+    <!-- Header -->
+    <header class="bg-primary text-center py-2 mb-4 mt-4">
+      <div class="container">
+        <h1 class="font-weight-light text-white">Meet the Team</h1>
+      </div>
+    </header>
+
+    <div class="row">
+      <!-- Team Member 1 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Team Member</h5>
+            <div class="card-text text-black-50">Web Developer</div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="aboutus-banner">
-            <img src="http://themeinnovation.com/demo2/html/build-up/img/home1/about1.jpg" alt />
+      </div>
+      <!-- Team Member 2 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Team Member</h5>
+            <div class="card-text text-black-50">Web Developer</div>
           </div>
         </div>
-        <div class="col-md-5 col-sm-6 col-xs-12">
-          <div class="feature">
-            <div class="feature-box">
-              <div class="clearfix">
-                <div class="feature-content">
-                  <h4>Work with heart</h4>
-                  <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
-                </div>
-              </div>
-            </div>
-            <div class="feature-box">
-              <div class="clearfix">
-                <div class="feature-content">
-                  <h4>Reliable services</h4>
-                  <p>Donec vitae sapien ut libero venenatis faucibu. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt</p>
-                </div>
-              </div>
-            </div>
-            <div class="feature-box">
-              <div class="clearfix">
-                <div class="feature-content">
-                  <h4>Great support</h4>
-                  <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
-                </div>
-              </div>
-            </div>
+      </div>
+      <!-- Team Member 3 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="https://source.unsplash.com/sNut2MqSmds/500x350" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Team Member</h5>
+            <div class="card-text text-black-50">Web Developer</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 4 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="https://source.unsplash.com/ZI6p3i9SbVU/500x350" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Team Member</h5>
+            <div class="card-text text-black-50">Web Developer</div>
           </div>
         </div>
       </div>
     </div>
+    <!-- /row -->
+
+    <div class="row">
+      <!-- Team Member 1 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Team Member</h5>
+            <div class="card-text text-black-50">Web Developer</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 2 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Team Member</h5>
+            <div class="card-text text-black-50">Web Developer</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 3 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="https://source.unsplash.com/sNut2MqSmds/500x350" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Team Member</h5>
+            <div class="card-text text-black-50">Web Developer</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 4 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="https://source.unsplash.com/ZI6p3i9SbVU/500x350" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Team Member</h5>
+            <div class="card-text text-black-50">Web Developer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /row -->
   </div>
+  <!-- /container -->
 </template>
 
 <script>
@@ -58,76 +105,4 @@ export default {
 </script>
 
 <style scoped>
-.aboutus-section {
-  padding: 4em 0 0 0;
-  display: flex;
-  justify-content: center;
-}
-.aboutus-title {
-  font-size: 30px;
-  letter-spacing: 0;
-  line-height: 32px;
-  margin: 0 0 39px;
-  padding: 0 0 11px;
-  position: relative;
-  text-transform: uppercase;
-  color: #000;
-}
-.aboutus-title::after {
-  background: #fdb801 none repeat scroll 0 0;
-  bottom: 0;
-  content: "";
-  height: 2px;
-  left: 0;
-  position: absolute;
-  width: 150px;
-}
-.aboutus-text {
-  color: #606060;
-  font-size: 16px;
-  line-height: 22px;
-  margin: 0 0 35px;
-}
-
-a:hover,
-a:active {
-  color: #ffb901;
-  text-decoration: none;
-  outline: 0;
-}
-.aboutus-more {
-  border: 1px solid #fdb801;
-  border-radius: 25px;
-  color: #fdb801;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0;
-  padding: 7px 20px;
-  text-transform: uppercase;
-}
-
-.feature {
-  margin-left: 5em;
-}
-
-.feature .feature-box .feature-content h4 {
-  color: #0f0f0f;
-  font-size: 26px;
-  letter-spacing: 0;
-  line-height: 22px;
-  margin: 0 0 5px;
-}
-
-.feature .feature-box .feature-content {
-  float: left;
-  width: 78%;
-}
-
-.feature .feature-box .feature-content p {
-  color: #606060;
-  font-size: 16px;
-  line-height: 22px;
-  padding-top: 1em;
-}
 </style>
