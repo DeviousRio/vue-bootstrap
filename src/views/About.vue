@@ -52,7 +52,7 @@
     <!-- /row -->
 
     <div class="row">
-      <!-- Team Member 1 -->
+      <!-- Team Member 5 -->
       <div class="col-xl-3 col-md-6 mb-4">
         <div class="card border-0 shadow">
           <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="..." />
@@ -62,7 +62,7 @@
           </div>
         </div>
       </div>
-      <!-- Team Member 2 -->
+      <!-- Team Member 6 -->
       <div class="col-xl-3 col-md-6 mb-4">
         <div class="card border-0 shadow">
           <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="..." />
@@ -72,7 +72,7 @@
           </div>
         </div>
       </div>
-      <!-- Team Member 3 -->
+      <!-- Team Member 7 -->
       <div class="col-xl-3 col-md-6 mb-4">
         <div class="card border-0 shadow">
           <img src="https://source.unsplash.com/sNut2MqSmds/500x350" class="card-img-top" alt="..." />
@@ -82,7 +82,7 @@
           </div>
         </div>
       </div>
-      <!-- Team Member 4 -->
+      <!-- Team Member 8 -->
       <div class="col-xl-3 col-md-6 mb-4">
         <div class="card border-0 shadow">
           <img src="https://source.unsplash.com/ZI6p3i9SbVU/500x350" class="card-img-top" alt="..." />
