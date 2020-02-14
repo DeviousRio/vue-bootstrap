@@ -1,7 +1,9 @@
 <template>
   <div class="question-box-container">
     <b-jumbotron class="text-center">
-      <template slot="lead"></template>
+      <template slot="lead">
+        {{ currentQuestion.question }}
+      </template>
 
       <hr class="my-4" />
 
@@ -13,12 +15,14 @@
 
 <script>
 export default {
-  name: "QuizCmp"
+  name: "QuestionBox",
+  props: {
+    // Accepting props from the parent -> <QuestionBox :currentQuestion="questions[index]" />
+    currentQuestion: Object
+  }
 };
 </script>
 
 <style scoped>
-button {
-    margin: 0 auto;
-}
+
 </style>
