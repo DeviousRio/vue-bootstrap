@@ -12,16 +12,14 @@
         v-for="(answer, index) in answers" 
         :key="index" 
         @click="selectAnswer(index)" 
-        :class="[!answered && selectedIndex === index ? 'selected' 
-        : answered && correctIndex === index ? 'correct' 
-        : answered && selectedIndex === index && correctIndex !== index ? 'incorrect' 
-        : '']">{{ answer }}</b-list-group-item>
+        :class="answerClass(index)">{{ answer }}</b-list-group-item>
       </b-list-group>
       <!-- <p v-for="(answer, index) in answers" :key="index">{{ answer }}</p> -->
 
       <div class="mt-5">
-        <b-button @click="submitAnswer" :disabled="selectedIndex === null || answered" variant="primary" class="mr-1">Submit</b-button>
-        <b-button @click="next" variant="success" class="ml-1">Next</b-button>
+        <b-button @click="previous" variant="success">Previous</b-button>
+        <b-button @click="submitAnswer" :disabled="selectedIndex === null || answered" variant="primary">Submit</b-button>
+        <b-button @click="next" variant="success">Next</b-button>
       </div>
     </b-jumbotron>
   </div>
@@ -35,6 +33,7 @@ export default {
   props: {
     // Accepting props from the parent -> <QuestionBox :currentQuestion="questions[index]...." />
     currentQuestion: Object,
+    previous: Function,
     next: Function,
     increment: Function
   },
@@ -84,12 +83,33 @@ export default {
 
       this.answered = true;
       this.increment(isCorrect);
+    },
+    answerClass(index) {
+      let answerClass = '';
+
+      if (!this.answered && this.selectedIndex === index) {
+        answerClass = 'selected';
+      } else if (this.answered && this.correctIndex === index) {
+        answerClass = 'correct';
+      } else if ((this.answered && this.selectedIndex === index) && this.correctIndex !== index) {
+        answerClass = 'incorrect';
+      }
+
+      return answerClass;
     }
   }
 };
 </script>
 
 <style scoped>
+  button {
+    margin: 0 0.5em;
+  }
+
+  button:nth-child(3) {
+    padding: 0.35em 1.2em;
+  }
+
   .list-group {
     cursor: pointer;
   }

@@ -6,7 +6,7 @@
       <b-row>
         <b-col sm="6" offset="3">
           <!-- QuestionBox is rendering only if the questions array is not empty -->
-          <QuestionBox v-if="questions.length" :currentQuestion="questions[index]" :next="next" :increment="increment" />
+          <QuestionBox v-if="questions.length" :previous="previous" :currentQuestion="questions[index]" :next="next" :increment="increment" />
         </b-col>
       </b-row>
     </b-container>
@@ -36,6 +36,14 @@ export default {
       this.index++;
       if (this.index == 10) {
         this.index = 0;
+      }
+    },
+    previous() {
+      if (this.index <= 0) {
+        this.index = 0;
+        return;
+      } else {
+        this.index--;
       }
     },
     increment(isCorrect) {
