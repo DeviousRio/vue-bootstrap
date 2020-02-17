@@ -12,12 +12,15 @@
         v-for="(answer, index) in answers" 
         :key="index" 
         @click="selectAnswer(index)" 
-        :class="[selectedIndex === index ? 'selected' : '']">{{ answer }}</b-list-group-item>
+        :class="[!answered && selectedIndex === index ? 'selected' 
+        : answered && correctIndex === index ? 'correct' 
+        : answered && selectedIndex === index && correctIndex !== index ? 'incorrect' 
+        : '']">{{ answer }}</b-list-group-item>
       </b-list-group>
       <!-- <p v-for="(answer, index) in answers" :key="index">{{ answer }}</p> -->
 
       <div class="mt-5">
-        <b-button @click="submitAnswer" variant="primary" class="mr-1">Submit</b-button>
+        <b-button @click="submitAnswer" :disabled="selectedIndex === null || answered" variant="primary" class="mr-1">Submit</b-button>
         <b-button @click="next" variant="success" class="ml-1">Next</b-button>
       </div>
     </b-jumbotron>
@@ -39,7 +42,8 @@ export default {
     return {
       selectedIndex: null,
       correctIndex: null,
-      shuffledAnswers: []
+      shuffledAnswers: [],
+      answered: false
     }
   },
   computed: {
@@ -54,6 +58,7 @@ export default {
       immediate: true,
       handler() {
         this.selectedIndex = null;
+        this.answered = false;
         this.shuffleAnswers();
       }
     }
@@ -77,6 +82,7 @@ export default {
         isCorrect = true;
       }
 
+      this.answered = true;
       this.increment(isCorrect);
     }
   }
