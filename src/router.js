@@ -25,6 +25,6 @@ export default new Router({
         { path: '/register', name: 'register', component: Register },
         { path: '/dogs', name: 'dogs', component: Dogs },
         { path: '/cats', name: 'cats', component: Cats },
-        { path: '/pets', name: 'pets', component: Pets },
+        { path: '/pets/:id', name: 'pets', component: Pets },
     ]
 });

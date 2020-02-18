@@ -1,17 +1,28 @@
 <template>
-  <b-container>
-    <b-table striped hover :items="cats" />
-  </b-container>
+  <div>
+    <h1 class="text-center m-4">Cats for Adoption</h1>
+    <b-container>
+      <b-table striped hover :items="cats">
+        <template slot="name" slot-scope="data">
+          <router-link :to="`/pets/${data.index}`">{{ data.value }}</router-link>
+        </template>
+      </b-table>
+    </b-container>
+  </div>
 </template>
 
 <script>
-import Cats from "../data/cats";
+// importing Cats data from data folder and showing it in the table
+import { mapState } from 'vuex';
 
 export default {
   data() {
-    return {
-      cats: Cats
-    };
+    return {};
+  },
+  computed: {
+      ...mapState([
+          'cats'
+      ])
   }
 };
 </script>

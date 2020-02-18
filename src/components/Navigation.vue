@@ -6,7 +6,7 @@
         <b-dropdown id="dropdown-1" text="Animals" class="m-md-2"  size="md">
           <b-dropdown-item><router-link to="/cats" class="blue-link">Cats</router-link></b-dropdown-item>
           <b-dropdown-item><router-link to="/dogs" class="blue-link">Dogs</router-link></b-dropdown-item>
-          <b-dropdown-item><router-link to="/pets" class="blue-link">Pets</router-link></b-dropdown-item>
+          <!-- <b-dropdown-item><router-link to="/pets" class="blue-link">Pets</router-link></b-dropdown-item> -->
         </b-dropdown>
       </div>
 
