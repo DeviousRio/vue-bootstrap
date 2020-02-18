@@ -8,6 +8,9 @@ import Contact from './views/Contact';
 import Quiz from './views/Quiz';
 import Login from './views/Login';
 import Register from './views/Register';
+import Dogs from './views/Dogs';
+import Cats from './views/Cats';
+import Pets from './views/Pets';
 
 Vue.use(Router);
 
@@ -19,6 +22,9 @@ export default new Router({
         { path: '/contact', name: 'contact', component: Contact },
         { path: '/quiz', name: 'quiz', component: Quiz },
         { path: '/login', name: 'login', component: Login },
-        { path: '/register', name: 'register', component: Register }
+        { path: '/register', name: 'register', component: Register },
+        { path: '/dogs', name: 'dogs', component: Dogs },
+        { path: '/cats', name: 'cats', component: Cats },
+        { path: '/pets', name: 'pets', component: Pets },
     ]
 });

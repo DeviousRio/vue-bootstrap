@@ -1,7 +1,14 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="dark">
-      <b-navbar-brand href="/">VueJS Bootstrap</b-navbar-brand>
+      <!-- <b-navbar-brand href="/">VueJS Bootstrap</b-navbar-brand> -->
+      <div>
+        <b-dropdown id="dropdown-1" text="Animals" class="m-md-2"  size="md">
+          <b-dropdown-item><router-link to="/cats" class="blue-link">Cats</router-link></b-dropdown-item>
+          <b-dropdown-item><router-link to="/dogs" class="blue-link">Dogs</router-link></b-dropdown-item>
+          <b-dropdown-item><router-link to="/pets" class="blue-link">Pets</router-link></b-dropdown-item>
+        </b-dropdown>
+      </div>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -31,13 +38,17 @@ export default {
 <style scoped>
 a {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   margin: 0 1.5em;
   font-size: 1.1em;
 }
 
 a:hover {
   text-decoration: none;
-  color: #007BFF;
+  color: #007bff;
+}
+
+.blue-link {
+  color: #007bff;
 }
 </style>
