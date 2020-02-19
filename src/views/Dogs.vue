@@ -1,21 +1,22 @@
 <template>
   <div>
-    <h1 class="text-center m-4">Dogs for Adoption</h1>
-    <b-container>
-      <b-table striped hover :items="dogs" />
-    </b-container>
+    <PetTable species="dogs" :pets="dogs" />
   </div>
 </template>
 
 <script>
-// importing Cats data from data folder and showing it in the table
-import Dogs from "../data/dogs";
+import { mapState } from "vuex";
+import PetTable from "../components/PetTable";
 
 export default {
+  components: {
+    PetTable
+  },
   data() {
-    return {
-      dogs: Dogs
-    };
+    return {};
+  },
+  computed: {
+    ...mapState(["dogs"])
   }
 };
 </script>

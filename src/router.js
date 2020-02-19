@@ -11,6 +11,7 @@ import Register from './views/Register';
 import Dogs from './views/Dogs';
 import Cats from './views/Cats';
 import Pets from './views/Pets';
+import Adopt from './views/Adopt';
 
 Vue.use(Router);
 
@@ -25,6 +26,7 @@ export default new Router({
         { path: '/register', name: 'register', component: Register },
         { path: '/dogs', name: 'dogs', component: Dogs },
         { path: '/cats', name: 'cats', component: Cats },
-        { path: '/pets/:id', name: 'pets', component: Pets },
+        { path: '/pets/:species/:id', name: 'pets', component: Pets },
+        { path: '/adopt', name: 'adopt', component: Adopt }
     ]
 });
